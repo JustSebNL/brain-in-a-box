@@ -1,42 +1,32 @@
 Shared Dependencies:
 
-1. **Exported Variables**: 
-   - `activeloop`: The instance of Activeloop Storage API used across the extension.
-   - `supertokens`: The instance of Supertokens used for security and login.
+1. Exported Variables:
+   - `activeloop`: The instance of Activeloop Storage API used across the application.
    - `modal`: The instance of Modal used for offloading tasks.
+   - `supertokens`: The instance of Supertokens used for security and login.
 
-2. **Data Schemas**: 
-   - `VectorData`: The schema for the data stored in the vector database.
+2. Data Schemas:
+   - `CommentSchema`: Schema for the comments added by the user.
+   - `WebsiteSchema`: Schema for the websites saved as MHTML.
+   - `VectorSchema`: Schema for the vector database.
 
-3. **DOM Element IDs**: 
-   - `search-bar`: The ID of the search bar element.
-   - `save-button`: The ID of the save button element.
-   - `comment-box`: The ID of the comment box element.
-   - `website-capture`: The ID of the website capture element.
-   - `vector-database`: The ID of the vector database element.
+3. DOM Element IDs:
+   - `comment-box`: ID for the comment box element.
+   - `website-capture`: ID for the website capture element.
+   - `search-bar`: ID for the search bar element.
+   - `vector-database`: ID for the vector database element.
+   - `brain-in-a-box`: ID for the Brain in a Box element.
+   - `deep-lake`: ID for the Deep Lake element.
 
-4. **Message Names**: 
-   - `SAVE_TO_VECTOR`: Message name for saving data to the vector database.
-   - `SEARCH_VECTOR`: Message name for searching the vector database.
+4. Message Names:
+   - `ADD_COMMENT`: Message name for adding a comment.
+   - `ADD_WEBSITE`: Message name for adding a website.
+   - `SEARCH_DATA`: Message name for searching data.
 
-5. **Function Names**: 
-   - `saveToVector`: Function to save data to the vector database.
-   - `searchVector`: Function to search the vector database.
-   - `captureSelection`: Function to capture selected text.
-   - `captureMHTML`: Function to capture the website as MHTML.
-
-6. **CSS Files**: 
-   - `tailwind.css`: Tailwind CSS file used across the extension for styling.
-   - `main.css`: Main CSS file used across the extension for additional custom styling.
-
-7. **React Components**: 
-   - `SearchBar`: Component for the search bar.
-   - `SaveButton`: Component for the save button.
-   - `CommentBox`: Component for the comment box.
-   - `WebsiteCapture`: Component for the website capture functionality.
-   - `VectorDatabase`: Component for displaying the vector database.
-
-8. **JavaScript Libraries**: 
-   - `React`: Used across all JS files for creating the user interface.
-   - `NextJS`: Used in popup.js, options.js, and background.js for routing and server-side rendering.
-   - `Svelte`: Used in content.js for reactive programming.
+5. Function Names:
+   - `addComment()`: Function to add a comment.
+   - `addWebsite()`: Function to add a website.
+   - `searchData()`: Function to search data.
+   - `saveToActiveloop()`: Function to save data to Activeloop.
+   - `runModalTask()`: Function to run a task in Modal.
+   - `loginWithSupertokens()`: Function to login with Supertokens.

@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "Brain in a Box",
+  "name": "Website Comment Chrome Extension",
   "version": "1.0",
   "permissions": ["activeTab", "storage", "contextMenus"],
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "src/popup.html",
     "default_icon": {
       "16": "images/icon16.png",
       "48": "images/icon48.png",
@@ -12,27 +12,22 @@
     }
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "src/background.js"
   },
+  "options_page": "src/options.html",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "js": ["src/contentScript.js"],
+      "css": ["src/popup.css"]
     }
   ],
-  "options_page": "options.html",
+  "omnibox": {
+    "keyword" : "Braininabox"
+  },
   "icons": {
     "16": "images/icon16.png",
     "48": "images/icon48.png",
     "128": "images/icon128.png"
-  },
-  "omnibox": {
-    "keyword": "Braininabox"
-  },
-  "web_accessible_resources": [
-    {
-      "resources": ["lib/activeloop.js", "lib/supertokens.js", "lib/modal.js"],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  }
 }

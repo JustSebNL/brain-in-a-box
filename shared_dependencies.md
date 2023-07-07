@@ -30,3 +30,6 @@ Shared Dependencies:
    - `saveToActiveloop()`: Function to save data to Activeloop.
    - `runModalTask()`: Function to run a task in Modal.
    - `loginWithSupertokens()`: Function to login with Supertokens.
+
+6. Advanced Features:
+- Through a short key (set by user) or by right clicking the extension icon do you so will be able to select the option to record a click action or a browser action for this function the extension will use the playwright API and this will then be stored within the vector database 

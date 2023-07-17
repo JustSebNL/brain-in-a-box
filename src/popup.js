@@ -1,4 +1,3 @@
-```javascript
 import React from 'react';
 import CommentBox from './components/CommentBox';
 import WebsiteCapture from './components/WebsiteCapture';
@@ -65,4 +64,3 @@ class Popup extends React.Component {
 }
 
 export default Popup;
-```

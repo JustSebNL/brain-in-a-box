@@ -1,4 +1,3 @@
-```javascript
 import React, { useState } from 'react';
 import { addComment } from '../utils/activeloop';
 
@@ -30,4 +29,3 @@ function CommentBox() {
 }
 
 export default CommentBox;
-```

@@ -1,4 +1,3 @@
-```javascript
 import React, { useState } from 'react';
 import { saveToActiveloop } from '../utils/activeloop';
 import { WebsiteSchema } from '../utils/schemas';
@@ -27,4 +26,3 @@ function WebsiteCapture() {
 }
 
 export default WebsiteCapture;
-```

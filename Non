@@ -1,0 +1,9 @@
+import React from 'react';
+
+function DeepLake() {
+  return (
+    <div id="deep-lake"></div>
+  );
+}
+
+export default DeepLake;

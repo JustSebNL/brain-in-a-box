@@ -1,4 +1,3 @@
-```javascript
 import { activeloop, modal, supertokens } from '../utils';
 import { CommentSchema, WebsiteSchema } from '../schemas';
 
@@ -57,4 +56,3 @@ function searchData(query) {
       console.error('Error searching data in Activeloop:', error);
     });
 }
-```

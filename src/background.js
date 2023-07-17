@@ -1,4 +1,3 @@
-```javascript
 import { activeloop, modal, supertokens } from './utils';
 import { CommentSchema, WebsiteSchema, VectorSchema } from './schemas';
 
@@ -66,4 +65,3 @@ chrome.runtime.onStartup.addListener(() => {
 function loginWithSupertokens() {
   supertokens.init();
 }
-```

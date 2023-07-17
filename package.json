@@ -1,0 +1,24 @@
+{
+  "name": "brain-in-a-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^13.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "redux": "^4.1.1",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "openai": "^0.27.0",
+    "tailwindcss": "^3.0.0",
+    "supertokens-website": "^8.6.0",
+    "next-auth": "^4.0.0-beta.7"
+  }
+}

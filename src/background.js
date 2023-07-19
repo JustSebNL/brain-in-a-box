@@ -59,9 +59,9 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 });
 
 chrome.runtime.onStartup.addListener(() => {
-  loginWithSupertokens();
+  signIn();
 });
 
-function loginWithSupertokens() {
-  supertokens.init();
+function signIn() {
+  NextAuth({ providers, database });
 }

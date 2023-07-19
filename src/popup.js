@@ -5,7 +5,8 @@ import VectorDatabase from './components/VectorDatabase';
 import BrainInABox from './components/BrainInABox';
 import DeepLake from './components/DeepLake';
 import { addComment, addWebsite, searchData } from './utils/activeloop';
-import { loginWithSupertokens } from './utils/supertokens';
+import Login from './components/Login';
+import { signIn } from 'next-auth/client';
 
 class Popup extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class Popup extends React.Component {
   }
 
   componentDidMount() {
-    loginWithSupertokens()
+    signIn()
       .then(user => {
         this.setState({ user });
         this.loadComments();
@@ -58,6 +59,7 @@ class Popup extends React.Component {
         <VectorDatabase vectorData={vectorData} />
         <BrainInABox />
         <DeepLake />
+        <Login />
       </div>
     );
   }
